@@ -96,7 +96,7 @@ uint8_t func0(uint32_t startBeat)
 	blur2d(leds, LED_W, LED_H, 32);
 	theta = fwd ? theta + 5 : theta - 3;
 	t++;
-	return beatCount >= startBeat + F0_BEATS ? /*getRandomExcluding(*/0/*)*/ : 0;
+	return beatCount >= startBeat + F0_BEATS ? getRandomExcluding(0) : 0;
 }
 
 #define F1_BEATS 12
